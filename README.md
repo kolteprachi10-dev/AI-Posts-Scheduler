@@ -181,7 +181,7 @@ Open the frontend using Live Server or any local web server.
 
 ### Scheduled Posts
 
-![Scheduled Posts](screenshots/scheduled-posts.png)
+![Scheduled Posts](screenshots/scheduled-post.png)
 
 ---
 
