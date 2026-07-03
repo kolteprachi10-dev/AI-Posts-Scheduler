@@ -1,14 +1,14 @@
 {
   "name": "ai-posts-scheduler",
   "version": "1.0.0",
-  "description": "",
+  "description": "AI-powered social media post scheduler with Google Sheets integration and JWT authentication.",
   "main": "index.js",
   "scripts": {
     "start": "node server/index.js",
     "dev": "node server/index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Prachi Kolte",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
