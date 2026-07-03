@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Post Scheduler</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="responsiveness.css">
+</head>
+
+<body>
+
+<div class="main-container">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div>
+
+            <div class="logo">
+
+                <div class="logo-icon">
+
+                    <i class="bi bi-shield-lock-fill"></i>
+
+                </div>
+
+                <div>
+
+                    <h3>AI Scheduler</h3>
+
+                    <span>Smart • Secure • Automated</span>
+
+                </div>
+
+            </div>
+
+
+            <ul class="menu">
+
+                <li class="active">
+
+                    <a href="#">
+
+                        <i class="bi bi-plus-square"></i>
+
+                        Create Post
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="scheduled-posts.html">
+
+                        <i class="bi bi-calendar-event"></i>
+
+                        Scheduled Posts
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="dashboard.html">
+
+                        <i class="bi bi-speedometer2"></i>
+
+                        Dashboard
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="quote-box">
+
+            <i class="bi bi-shield-lock"></i>
+
+            <p>
+
+                Security isn't a product,
+
+                it's a process.
+
+            </p>
+
+            <small>
+
+                Bruce Schneier
+
+            </small>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- Main -->
+
+    <main class="content">
+
+
+        <!-- Header -->
+
+        <div class="topbar">
+
+            <div>
+
+                <h1>Create New Post</h1>
+
+                <p>
+
+                    Schedule your social media posts using AI
+
+                </p>
+
+            </div>
+
+            <div class="secure-badge">
+
+                <i class="bi bi-patch-check-fill"></i>
+
+                Secure System
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Card -->
+
+        <div class="glass-card">
+
+            <div class="card-header-custom">
+
+                <div class="card-icon">
+
+                    <i class="bi bi-pencil-square"></i>
+
+                </div>
+
+                <div>
+
+                    <h3>Post Details</h3>
+
+                    <p>Fill all information below</p>
+
+                </div>
+
+            </div>
+
+
+
+            <form id="postForm">
+
+                <!-- Title -->
+
+                <div class="mb-4">
+
+                    <label>
+
+                        <i class="bi bi-type"></i>
+
+                        Title
+
+                    </label>
+
+                    <input
+
+                        type="text"
+
+                        id="title"
+
+                        class="form-control custom-input"
+
+                        placeholder="Enter Post Title"
+
+                        required>
+
+                </div>
+
+
+
+                <!-- Platform -->
+
+                <div class="mb-4">
+
+                    <label>
+
+                        <i class="bi bi-display"></i>
+
+                        Platform
+
+                    </label>
+
+                    <select
+
+                        id="platform"
+
+                        class="form-select custom-input">
+
+                        <option>LinkedIn</option>
+
+                        <option>Instagram</option>
+
+                        <option>Facebook</option>
+
+                        <option>Twitter</option>
+
+                    </select>
+
+                </div>
+
+
+
+                <div class="row">
+
+                    <div class="col-md-6">
+
+                        <div class="mb-4">
+
+                            <label>
+
+                                <i class="bi bi-calendar3"></i>
+
+                                Date
+
+                            </label>
+
+                            <input
+
+                                type="date"
+
+                                id="date"
+
+                                class="form-control custom-input">
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-md-6">
+
+                        <div class="mb-4">
+
+                            <label>
+
+                                <i class="bi bi-clock"></i>
+
+                                Time
+
+                            </label>
+
+                            <input
+
+                                type="time"
+
+                                id="time"
+
+                                class="form-control custom-input">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Caption -->
+
+                <div class="mb-4">
+
+                    <label>
+
+                        <i class="bi bi-chat-left-text"></i>
+
+                        Caption
+
+                    </label>
+
+                    <textarea
+
+                        id="caption"
+
+                        rows="6"
+
+                        class="form-control custom-input"
+
+                        placeholder="Write your caption here..."></textarea>
+
+                </div>
+
+
+
+                <!-- Buttons -->
+
+                <div class="button-group">
+
+                    <button
+
+                        type="button"
+
+                        id="generateAI"
+
+                        class="btn ai-btn">
+
+                        <i class="bi bi-stars"></i>
+
+                        Generate AI Caption
+
+                    </button>
+
+
+                    <button
+
+                        type="submit"
+
+                        class="btn save-btn">
+
+                        <i class="bi bi-send-fill"></i>
+
+                        Save Post
+
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </main>
+
+</div>
+
+
+<script src="js/app.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="js/toast.js"></script>
+
+</body>
+
+</html>
