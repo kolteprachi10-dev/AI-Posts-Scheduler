@@ -167,6 +167,12 @@ Open the frontend using Live Server or any local web server.
 
 ---
 
+### Register Page
+
+![Register Page](screenshots/register.png)
+
+---
+
 ### Dashboard
 
 ![Dashboard](screenshots/dashboard.png)
@@ -187,7 +193,7 @@ Open the frontend using Live Server or any local web server.
 
 ### Google user Sheets
 
-![Google Sheets](screenshots/google-user-sheet.png)
+![Google Sheets](screenshots/google-sheet-user.png)
 
 ---
 
